@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"> 
+    <meta http-equiv="refresh" content="4000; URL=accueil.html"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<title>index</title>
+
+<style>
+img {
+    border-radius: 0px;
+    -webkit-animation:spin 4s linear;
+    -moz-animation:spin 4s linear;
+    animation:spin 4s linear;
+    position: absolute;
+    top: 215px;
+    left: 612px;
+    height: 210px;
+    width: 210px;
+    }    
+.loader {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: cairo, sans-serif;
+/*     background-color: #ccc; */
+    background-color:black;
+}
+div {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    color:;
+}
+span {
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    color: white;
+}
+div::before {
+    content: "";
+    position: absolute;
+    width:  80px;
+    height: 65px;
+    background-color: white;
+    /*background-color:white (0 0 0 / 20%);*/
+    top: 3px;
+    animation: move 4s linear infinite;
+    -webkit-animation: move 4s linear;
+    
+}   
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    -->
+@keyframes move {
+    0% ,
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 80px);
+    }
+}
+
+</style>
+</head>
+<body>
+<img src="images/logo_noir.png"></img>
+
+
+<div class="loader">
+<span>Opün DƏSIGN</span>
+</div>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+	<title>about</title>
+	
+	<style>
+	    * {
+		margin: 0
+	}
+	
+	* {
+	text-decoration: none	
+	}
+	.btn {
+		padding: 10px 15px;
+		cursor: pointer;
+		color: white;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 5px;
+		background-color: white;
+		margin-left: 40px;
+	}
+	.btn-download {
+		background-color: white;
+		color: #222222;
+		border-color: white;
+	}
+	.btn-download:hover {
+		background-color: #222222;
+		color: white;
+	}
+
+	.container {
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:row;
+		justify-content:flex-start;
+		align-items:stretch;
+		width: 100%;
+		height: 560px;
+        margin-top: 0px; 
+		text-align: left;
+		overflow: hidden;
+		color: #ababab
+	}
+
+	.left {order:1; background: #222222; flex-basis:100%; height:670px}
+	.middle {order:3; background: #222222;flex-basis:100%; height:670px;}
+	.right {order:2; background:#222222;flex-basis:100%; height:670px;}
+	
+	.footer {
+		/*position: sticky;
+		left: 0;
+		bottom: 0;*/
+		height: 92px;
+		width: 100%;
+		background-color: #222222;
+		color: white;
+		text-align: center
+	}
+	@media screen and (min-width:600px) {
+	   .container {
+		   flex-wrap:nowrap;
+	   } 
+
+		.left {
+			flex-basis:900px;
+			order:1;
+		}
+		.middle {
+			flex-basis:490px;
+			order:2;
+		}
+		.right {
+			flex-basis:700px;
+			order:3;
+		}
+	}  
+		
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		text-decoration: none;
+		list-style-type: none;
+		/*overflow: hidden*/
+	}
+	#brand {
+		width: 80px;
+		height: 80px;
+		margin-left: 57px;
+		margin-top: 10px;
+	}
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+	article, aside, footer, header {
+		padding: 0.5rem;
+	  
+	}
+	/*header {
+		background-color: black;
+		color: white;
+		text-align: center;
+		align-content: space-between;
+		border-bottom: 1px solid;
+	}*/
+	#texte {
+		text-align: center;
+		color: white;	
+		font-size: small;		
+	}
+
+	@keyframes slidein {
+		75% {
+			font-size: 100%;
+			margin-left: 0%;
+			width: 100%;
+		}
+
+		from {
+			margin-left: 50%;
+			width: 100%;
+		}
+
+		to {
+			margin-left: 0%;
+			width: 100%;
+		}
+	}	
+
+	/* default navigation values */
+	nav {
+		display: flex;
+		background-color: #222222;
+		padding: 10px 0;
+		height: 125px;
+	}
+	nav ul {
+		display: flex;
+		width: 650px;
+		margin: 0 auto;
+		line-height: 100px;
+	}
+	nav a {
+		text-align: center;
+		color: black;
+		padding: 30px
+	}
+	nav a:hover {
+	  	color: grey;
+	}
+	#menu a {
+		font-weight: bolder;
+		padding-bottom: 5px;
+		font-size: 14px;
+  		justify-content: center;
+  		align-items: center;
+		color: white;
+		background-color: #222222;
+		padding: 10px 20px;
+		border-radius: 0px;
+		transition: all 1s ease-out;
+	}
+	#menu a:hover, a:focus {
+		color: black;
+		/*border-bottom: grey solid 1px;*/
+		text-decoration: underline wavy #ababab 1.8px;
+		text-underline-offset: 0.5rem;
+		color: #ababab;
+  		background-color: #222222;
+	}
+	
+	img {
+    	width: 100%;
+		
+    }
+
+	/* larger screen */
+	@media screen and (min-width: 30rem) {
+	}
+	#page {
+		height: ;
+		border: 6px solid white;
+	}
+
+	</style>
+	
+	<body>
+
+		<div id="page">
+				
+			<nav id="menu">
+				<div id="brand">
+					<img src="images/logogrey.png">	
+				</div>
+				<ul class="items">
+					<li><b><a href="accueil.html">HOME</a></b></li>
+					<li><b><a href="works.html">WORKS</a></b></li>
+					<li><b><a href="about.html">ABOUT</a></b></li>
+					<li><b><a href="contact.html">CONTACT</a></b></li>
+				</ul>
+			</nav>
+
+			<div class="container">
+				<div class="left">
+					<img style="margin-left:200px;margin-top:30px; width:52%; height: 485px;" src="images/phunoir.png">
+				</div>
+				<div class="middle"><span style="font-size:13px"><br><br>Hey there,
+        			<br><br>I'm <span style="color:white">Phuqui Duong</span> - a graphic designer and
+        			<br>webdesigner based in Paris, France.
+					<br><br>I'm currently working as freelancer
+					<br>with awesome projet around the world.
+					<br><br><span style="color:white">AVAILABLE FOR PART OR FULL TIME WORK
+					<br><br>contact@opundesign.com</span>
+					<br><br><br><span style="color:white"><strong>I CAN HELP YOU WITH</strong></span>
+					<br><br>- Advertisements 
+					<br>- Brochures
+					<br>- Magazines
+					<br>- Thumbnail
+					<br>- Banner
+					</span></div>
+					
+					<div class="right"><span style="font-size:13px"><br><br>&emsp;&emsp;&emsp;<span style="color:white"><strong>I CAN HELP YOU WITH</strong></span>
+					<br><br>&emsp;&emsp;&emsp;- Advertisements 
+					<br>&emsp;&emsp;&emsp;- Brochures
+					<br>&emsp;&emsp;&emsp;- Magazines
+					<br>&emsp;&emsp;&emsp;- Thumbnail
+					<br>&emsp;&emsp;&emsp;- Banner
+					<br><br><br>&emsp;&emsp;&emsp;<span style="color:white"><strong>I CAN HELP YOU WITH</strong></span>
+					<br><br>&emsp;&emsp;&emsp;- Advertisements 
+					<br>&emsp;&emsp;&emsp;- Brochures
+					<br>&emsp;&emsp;&emsp;- Magazines
+					<br>&emsp;&emsp;&emsp;- Thumbnail
+					<br>&emsp;&emsp;&emsp;- Banner
+					<br><br><br><br><a href="telechargement/cv_jr" class="btn btn-download" download="cv_jr.pdf">Download CV</a>
+					</span></div>
+			</div>
+			<div class="footer">
+				<footer><span style="font-size:12px">All contents © Opün Design 2022</span></footer>
+		</div>  
+	</body>
+
+	
+</html>
